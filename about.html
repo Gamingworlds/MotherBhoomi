@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const backgrounds = [
+        "images/bg1.png",
+        "images/bg2.png",
+        "images/bg3.png",
+        "images/bg4.png"
+      ];
+      const randomBG = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+      document.body.style.backgroundImage = `url('${randomBG}')`;
+      document.body.style.backgroundSize = "cover";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center";
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - MotherBhoomi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      color: #000;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: #0ff;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      color: #ff00ff;
+      text-shadow: 0 0 10px #ff00ff;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    main h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      color: #00ffff;
+    }
+    .info p {
+      margin: 0.8rem 0;
+      font-size: 1.1rem;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.8rem;
+      border-left: 4px solid #0ff;
+      border-radius: 5px;
+    }
+    .info a {
+      color: #0ff;
+    }
+    .info a:hover {
+      color: #ff00ff;
+    }
+    footer {
+      margin-top: 3rem;
+      background: #111;
+      color: #888;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MotherBhoomi</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>About the Creator</h2>
+    <div class="info">
+      <p><strong>Owner Name:</strong> Krish</p>
+      <p><strong>Discord:</strong> krish_og</p>
+      <p><strong>Steam Name:</strong> Krish</p>
+      <p><strong>Steam Friend Code:</strong> 1226875764</p>
+      <p><strong>Steam Link:</strong> <a href="https://s.team/p/gndb-pfkg/HJPRVBHW" target="_blank">Click Here</a></p>
+      <p><strong>Instagram:</strong> zeusz555</p>
+      <p><strong>Phone Number:</strong> Me ku batau</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 MotherBhoomi. All rights reserved.
+  </footer>
+</body>
+</html>

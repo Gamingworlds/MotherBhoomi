@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const backgrounds = [
+        "images/bg1.png",
+        "images/bg2.png",
+        "images/bg3.png",
+        "images/bg4.png",
+      ];
+      const randomBG = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+      document.body.style.backgroundImage = `url('${randomBG}')`;
+      document.body.style.backgroundSize = "cover";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center";
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MotherBhoomi - Game Downloads</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+    }
+
+    header {
+      background-color: #111;
+      color: #0ff;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: #0ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff00ff;
+      text-shadow: 0 0 10px #ff00ff;
+    }
+
+    main {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .download-links a {
+      display: inline-block;
+      margin: 1rem;
+      padding: 1rem 2rem;
+      background-color: #00bfff;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .download-links a:hover {
+      background-color: #ff00ff;
+    }
+
+    footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>MotherBhoomi</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Hey Fellas!</h2>
+    <p>You can download all the games from here.</p>
+
+    <div class="download-links">
+      <a href="https://game3rb.com/category/games-online/" target="_blank">Game3RB - Free Games</a>
+      <a href="https://online-fix.me/" target="_blank">Online-Fix (Login Required)</a>
+    </div>
+  </main>
+
+  <footer>&copy; 2025 MotherBhoomi. All rights reserved.</footer>
+</body>
+</html>
